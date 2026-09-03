@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5Letras — Termos, Privacidade e Sobre</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #FBF3E7;
+            color: #241925;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container { max-width: 650px; width: 100%; text-align: center; }
+        .mark { display: flex; gap: 4px; justify-content: center; margin-bottom: 14px; }
+        .mark span { width: 16px; height: 16px; border-radius: 4px; display: block; }
+        .mark span:nth-child(1) { background: #128F53; }
+        .mark span:nth-child(2) { background: #FF8A00; }
+        .mark span:nth-child(3) { background: #C1272D; }
+        .logo { font-size: 34px; font-weight: 900; margin-bottom: 8px; letter-spacing: -0.5px; }
+
+        .company-info {
+            color: #7D7086;
+            font-size: 12px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+            background: #FFFCF6;
+            border: 1px solid #EBDFC9;
+            border-radius: 12px;
+            padding: 15px 20px;
+        }
+        .company-info strong { color: #241925; }
+
+        .section-title {
+            color: #7D7086;
+            font-size: 11px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+
+        .cards { display: grid; gap: 14px; margin-bottom: 30px; }
+        .cards-small { grid-template-columns: 1fr 1fr; }
+
+        .card {
+            background: #FFFCF6;
+            border: 1px solid #EBDFC9;
+            border-radius: 16px;
+            padding: 25px 20px;
+            text-decoration: none;
+            display: block;
+            transition: all 0.2s ease;
+            text-align: left;
+        }
+        .card:hover { border-color: #C2185B; transform: translateY(-2px); }
+        .card-icon { font-size: 24px; margin-bottom: 10px; }
+        .card h2 { color: #C2185B; font-size: 16px; margin-bottom: 4px; }
+        .card p { color: #7D7086; font-size: 12px; line-height: 1.5; }
+
+        .footer {
+            color: #A79BAE;
+            font-size: 11px;
+            line-height: 1.6;
+            border-top: 1px solid #EBDFC9;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="mark"><span></span><span></span><span></span></div>
+        <div class="logo">5Letras</div>
+
+        <div class="company-info">
+            <strong>NativeForge Tecnologia</strong><br>
+            Carlos Eduardo Cabral de Almeida · MEI<br>
+            CNPJ: 52.933.093/0001-00<br>
+            Maringá — PR<br>
+            contato.nativeforge@gmail.com
+        </div>
+
+        <p class="section-title">Documentos Legais</p>
+        <div class="cards cards-small">
+            <a href="privacy-policy.html" class="card">
+                <div class="card-icon">🔒</div>
+                <h2>Privacidade</h2>
+                <p>Como protegemos seus dados</p>
+            </a>
+            <a href="terms-of-service.html" class="card">
+                <div class="card-icon">📜</div>
+                <h2>Termos de Uso</h2>
+                <p>Regras do jogo</p>
+            </a>
+        </div>
+
+        <div class="cards">
+            <a href="delete-account.html" class="card">
+                <div class="card-icon">🗑️</div>
+                <h2>Excluir Conta</h2>
+                <p>Como pedir a exclusão da sua conta e dos seus dados.</p>
+            </a>
+            <a href="about.html" class="card">
+                <div class="card-icon">🏢</div>
+                <h2>Sobre a Empresa</h2>
+                <p>Informações da NativeForge, contato e detalhes sobre o 5Letras.</p>
+            </a>
+        </div>
+
+        <p class="footer">
+            © 2026 NativeForge • CNPJ 52.933.093/0001-00 • Maringá — PR<br>
+            Desenvolvedora do 5Letras e de outras soluções digitais.
+        </p>
+    </div>
+</body>
+</html>
